@@ -15,7 +15,7 @@ export type Pokemon = z.infer<typeof PokemonSchema>;
 
 const pokemonCache = new Map<number, Pokemon>();
 
-export function setPokemonName(id, name?: string): Pokemon {
+export function setPokemonName(id: number, name?: string): Pokemon {
   if (!name) {
     throw new Error('name is required');
   }
