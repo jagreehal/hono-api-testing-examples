@@ -1,22 +1,15 @@
 {
+  "extends": "@total-typescript/tsconfig/tsc/no-dom/app",
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es6",
-    "outDir": "dist",
+    "module": "ESNext",
+    "target": "ESNext",
     "moduleResolution": "node",
-    "sourceMap": true,
-    "strictNullChecks": true,
-    "allowUnreachableCode": true,
-    "noEmitOnError": false,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "types": ["node"],
-    "allowJs": true,
-    "skipLibCheck": true,
+    "noEmit": false,
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules"]
 }
