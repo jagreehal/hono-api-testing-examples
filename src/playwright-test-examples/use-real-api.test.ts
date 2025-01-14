@@ -1,4 +1,4 @@
-import { type ServerType, serve } from '@hono/node-server';
+import { serve, type ServerType } from '@hono/node-server';
 import { expect, test } from '@playwright/test';
 
 import { app } from '../app';
